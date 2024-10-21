@@ -1,7 +1,7 @@
 {
   "name": "jokidev",
   "version": "0.1.0",
-  "homepage": "https://joki.dev",
+  "homepage": "https://johannes178.github.io/goblin",
   "private": true,
   "dependencies": {
     "@react-three/drei": "^9.114.5",
