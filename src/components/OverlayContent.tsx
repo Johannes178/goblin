@@ -1,4 +1,5 @@
 import React from "react";
+import logo from "../logo.svg";
 
 const OverlayContent = () => {
   return (
@@ -15,22 +16,77 @@ const OverlayContent = () => {
         pointerEvents: "none",
         zIndex: 9999,
       }}>
-      <div
-        style={{
-          textAlign: "center",
-        }}>
-        <h1
+      <div>
+        {/* Brief Description */}
+        <h2
           style={{
-            fontSize: "4rem",
+            justifyContent: "center",
+            display: "flex",
             fontWeight: "bold",
+            fontSize: "2rem",
+            marginBottom: "2rem",
+            lineHeight: "1.5",
+            opacity: 0.9,
           }}>
-          Joki.dev
-        </h1>
-        <p
+          i center divs
+          <img
+            src={logo}
+            alt="Logo"
+            style={{
+              width: "2rem",
+              marginLeft: "0.5rem",
+            }}
+          />
+        </h2>
+        <div
           style={{
-            fontSize: "1.125rem",
-          }}></p>
-        linkedin github
+            justifyContent: "center",
+            display: "flex",
+            gap: "2rem",
+            pointerEvents: "auto",
+            marginBottom: "3rem",
+          }}>
+          <a
+            href="https://linkedin.com/in/your-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              fontSize: "1.125rem",
+              opacity: 0.8,
+              transition: "all 0.2s ease",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLAnchorElement).style.opacity = "0.1")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLAnchorElement).style.opacity = "1")
+            }>
+            linkedin
+          </a>
+          <a
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "inherit",
+              fontSize: "1.125rem",
+              opacity: 0.8,
+              transition: "all 0.2s ease",
+              cursor: "pointer",
+            }}
+            onMouseEnter={(e) =>
+              ((e.target as HTMLAnchorElement).style.opacity = "0.1")
+            }
+            onMouseLeave={(e) =>
+              ((e.target as HTMLAnchorElement).style.opacity = "1")
+            }>
+            github
+          </a>
+        </div>
       </div>
     </div>
   );
