@@ -47,7 +47,7 @@ const OverlayContent = () => {
             marginBottom: "3rem",
           }}>
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://linkedin.com/in/johannes178"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -67,7 +67,7 @@ const OverlayContent = () => {
             linkedin
           </a>
           <a
-            href="https://github.com/your-username"
+            href="https://github.com/johannes178"
             target="_blank"
             rel="noopener noreferrer"
             style={{
