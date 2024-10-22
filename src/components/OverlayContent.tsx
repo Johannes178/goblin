@@ -21,7 +21,7 @@ const OverlayContent = () => {
         }}>
         <h1
           style={{
-            fontSize: "7rem",
+            fontSize: "4rem",
             fontWeight: "bold",
           }}>
           Joki.dev
